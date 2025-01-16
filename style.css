@@ -1,0 +1,404 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #AAADB2;
+    color: #313C52;
+    line-height: 1.6;
+  }
+
+  /* Navigation Bar */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #D6C6A2;
+    padding: 10px 20px;
+  }
+
+  .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #313C52;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 0 15px;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: #313C52;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  .nav-links a:hover {
+    color: #B58E31;
+  }
+
+  /* Hamburger Menu (Hidden by Default) */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .hamburger span {
+    background-color: #313C52;
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+  }
+
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: #D6C6A2;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      text-align: center;
+    }
+
+    .nav-links.active {
+      display: flex;
+    }
+
+    .hamburger {
+      display: flex;
+    }
+  }
+
+  /* Home Section */
+  .home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-color: #60697A; */
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    text-align: center;
+    color: #fff;
+  }
+
+  .home h1 {
+    font-size: 3em;
+  }
+
+  .home p {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+
+  /* About Section Styles */
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 10%;
+    background-color: #D6C6A2;
+    color: #313C52;
+}
+
+.about-content {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-img {
+    flex: 1;
+    text-align: center;
+}
+
+.about-img img {
+    width: 80%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+/* Responsive Design for About Section */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 10%;
+    }
+
+    .about-content {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .about-img img {
+        width: 60%;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-content h2 {
+        font-size: 28px;
+    }
+
+    .about-content p {
+        font-size: 16px;
+    }
+}
+
+
+
+
+/* Projects Section Styles */
+.projects {
+    background-color: #B58E31;
+    color: #fff;
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.project-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.project-card {
+    background-color: #313C52;
+    color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.project-info p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.project-info .btn {
+    text-decoration: none;
+    background-color: #D6C6A2;
+    color: #313C52;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.project-info .btn:hover {
+    background-color: #B58E31;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Responsive Design for Projects Section */
+@media (max-width: 768px) {
+    .project-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-card {
+        width: 100%;
+    }
+
+    .projects h2 {
+        font-size: 28px;
+    }
+
+    .project-info h3 {
+        font-size: 20px;
+    }
+
+    .project-info p {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* Contact Us Section Styles */
+.contact {
+    background-color: #60697A;
+    color: #fff;
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    background-color: #313C52;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 5px;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: #B58E31;
+    color: #313C52;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #D6C6A2;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    font-size: 16px;
+}
+
+.contact-info li {
+    margin: 10px 0;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #D6C6A2;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: #B58E31;
+}
+
+/* Responsive Design for Contact Us Section */
+@media (max-width: 768px) {
+    .contact {
+        padding: 20px 10%;
+    }
+
+    .contact-form {
+        margin-bottom: 20px;
+    }
+
+    .contact-form button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact h2 {
+        font-size: 28px;
+    }
+
+    .contact-form label {
+        font-size: 14px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px;
+    }
+
+    .contact-info {
+        font-size: 14px;
+    }
+}
+/* makig it smooth for scrolling  */
+html{
+    scroll-behavior: smooth;
+}
+

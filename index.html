@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">Salik Javid </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section class="home" id="home">
+    <div>
+      <h1>Hey I am Salik</h1>
+      <h1>Welcome to My Portfolio</h1>
+      <p>Explore my projects, learn more about me, and get in touch!</p>
+    </div>
+  </section>
+</body>
+<script src="script.js"></script>
+</html>
+
+
+<!-- About Section -->
+<section id="about" class="about">
+  <div class="about-content">
+      <h2>About Me</h2>
+      <p>Hello! I'm Salik javid, a passionate web developer with a keen interest in creating beautiful, functional, and responsive websites. I love building projects that not only look great but also perform well across all devices.</p>
+      <p>With over 1 years of experience in front-end and back-end development, I've worked with a variety of technologies including HTML, CSS, JavaScript, React, Node.js, and more. My goal is to continue learning and creating innovative solutions for the web.</p>
+      <p>When I'm not coding, you can find me experimenting with design concepts, reading tech blogs, or exploring new places.</p>
+  </div>
+  <div class="about-img">
+      <img src="WhatsApp Image 2025-01-14 at 14.12.18.jpeg" alt="Salik javid">
+  </div>
+</section>
+
+
+<!-- Projects Section -->
+<section id="projects" class="projects">
+  <h2>My Projects</h2>
+  <div class="project-list">
+      <div class="project-card">
+          <img src="game.jpeg" alt="Project 1">
+          <div class="project-info">
+              <h3>Tic-Tac-Toe</h3>
+              <p>As part of my internship at iQuasar, I developed a Tic Tac Toe game, a classic two-player strategy-based game, using HTML , CSS JavaScript and React’s virtual DOM .</p>
+              <a href="https://lnkd.in/gZ8DJTgs" class="btn">View Project</a>
+          </div>
+      </div>
+      <div class="project-card">
+          <img src="youtube.jpeg" alt="Project 2">
+          <div class="project-info">
+              <h3>YouTube clone</h3>
+              <p>This project was a deep dive into frontend development, where I focused on replicating YouTube’s interface. Practiced complex CSS techniques to create a responsive, visually appealing layout.</p>
+              <a href="https://www.linkedin.com/posts/salik-javid-a0978828b_frontenddevelopment-webdevelopment-cssmastery-activity-7279173667274608642-EqyA?utm_source=share&utm_medium=member_desktop" class="btn">View Project</a>
+          </div>
+      </div>
+      <div class="project-card">
+          <img src="images.jpeg" alt="Project 3">
+          <div class="project-info">
+              <h3>Solenoid Engine</h3>
+              <p>My prototype: SOLENOID ENGINE , is an innovative device designed to convert electrical energy into linear mechanical motion. The prototype features a solenoid coil encasing a movable ferromagnetic core.</p>
+              <a href="https://www.linkedin.com/posts/salik-javid-a0978828b_physics-science-engineering-activity-7234866048951279616-Uiqa?utm_source=share&utm_medium=member_desktop" class="btn">View Project</a>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+      <!-- Contact Us Section -->
+<section id="contact" class="contact">
+  <h2>Contact Me</h2>
+  <div class="contact-form">
+      <form action="#" method="POST">
+          <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          </div>
+          <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+          <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+      </form>
+  </div>
+  <div class="contact-info">
+      <p>If you prefer, you can reach me via the following:</p>
+      <ul>
+          <li>Email: Salikjaveeddar@gmail.com</li>
+          <li>Phone: +91 9103672099</li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/salik-javid-a0978828b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">linkedin.com/in/SALIK JAVID</a></li>
+      </ul>
+  </div>
+</section>
